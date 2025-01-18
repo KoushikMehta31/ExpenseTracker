@@ -1,0 +1,68 @@
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+button + button {
+  background-color: #f44336;
+}
+
+button + button:hover {
+  background-color: #e53935;
+}
+
+button + button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(244, 67, 54, 0.5);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.summary-item input:focus {
+  border-color: #4CAF50;
+}
+
+
+@media (max-width: 600px) {
+  .summary {
+    padding: 15px;
+  }
+
+  .summary-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .summary-item span {
+    margin-bottom: 5px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
